@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Contact Manager</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="left">
+        <div id="addContact">
+            <form>
+                <input id="firstName" name="firstName" type="text" placeholder="John"> First Name
+                <br>
+                <input name="lastName" type="text" placeholder="Doe"> Last Name
+                <br>
+                <input name="phoneNumber" type="tel" placeholder="555-240-8875" inputmode="tel"> Phone Number
+                <br>
+                <input type="submit" value="Add" id="submitAddContact">
+            </form>
+        </div>
+
+        <br>
+
+        <ol id="contactList">
+        </ol>
+        <input type="button" value="Export" id="exportContacts">
+
+        <br>
+
+        <div id="exportCatcher">
+            <span id="errors"></span>
+            <br>
+            <textarea id="output"  wrap="soft"></textarea>
+            <br>
+            <input type="button" value="Import" id="importContacts">
+        </div>
+    </div>
+
+    <div id="eventTracking">
+        <div id="successes">
+          <span class="header">Successes</span>
+          Users Added: <span id="successfulUsersAdded">0</span>
+          <br>
+          Users Removed: <span id="successfulUsersRemoved">0</span>
+          <br>
+          Imports: <span id="successfulImports">0</span>
+          <br>
+          Exports: <span id="successfulExports">0</span>
+        </div>
+        <div id="failures">
+          <span class="header">Failures</span>
+          Failed User Additions: <span id="failureUsersAdded">0</span>
+          <br>
+          Failed Imports: <span id="failureImports">0</span>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

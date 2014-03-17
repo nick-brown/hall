@@ -1,0 +1,9 @@
+div#left { float:left; }
+    div#addContact { }
+        #addContact input[type="text"], #addContact input[type="tel"] { border:1px solid #a9a9a9; margin:5px 0 10px; }
+
+    div#exportCatcher { margin:55px 0 0; }
+        textarea { width:650px; height:150px; }
+
+div#eventTracking { float:left; width:200px; margin:0 0 0 200px; }
+    .header { font-weight:bold; display:block; font-size:18px; margin:25px 0 10px; }
